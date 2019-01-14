@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Foundation
 
 public extension UIView {
     
@@ -107,7 +106,7 @@ public extension UIView {
         var image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        let data = UIImageJPEGRepresentation(image!, imageQuality > 0 ? imageQuality : 0.75)
+        let data = image?.jpegData(compressionQuality: imageQuality > 0 ? imageQuality : 0.75)
         image = UIImage(data: data!)
         return image!
     }
