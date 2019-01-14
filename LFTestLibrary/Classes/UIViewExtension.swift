@@ -9,9 +9,9 @@
 import UIKit
 import Foundation
 
-extension UIView {
+public extension UIView {
     
-    var bottom: CGFloat {
+    public var bottom: CGFloat {
         set {
             var r = self.frame
             r.origin.y = newValue - frame.size.height
@@ -23,7 +23,7 @@ extension UIView {
         }
     }
     
-    var left: CGFloat {
+    public var left: CGFloat {
         set {
             var r = self.frame
             r.origin.x = newValue
@@ -34,7 +34,7 @@ extension UIView {
         }
     }
     
-    var width: CGFloat {
+    public var width: CGFloat {
         set {
             var r = self.frame
             r.size.width = newValue
@@ -45,7 +45,7 @@ extension UIView {
         }
     }
     
-    var height: CGFloat {
+    public var height: CGFloat {
         set {
             var r = self.frame
             r.size.height = newValue
@@ -56,7 +56,7 @@ extension UIView {
         }
     }
     
-    var x: CGFloat {
+    public var x: CGFloat {
         set {
             var r = self.frame
             r.origin.x = newValue
@@ -67,7 +67,7 @@ extension UIView {
         }
     }
     
-    var y: CGFloat {
+    public var y: CGFloat {
         set {
             var r = self.frame
             r.origin.y = newValue
@@ -78,7 +78,7 @@ extension UIView {
         }
     }
     
-    var centerX: CGFloat {
+    public var centerX: CGFloat {
         set {
             var point = self.center
             point.x = newValue
@@ -89,7 +89,7 @@ extension UIView {
         }
     }
     
-    var centerY: CGFloat {
+    public var centerY: CGFloat {
         set {
             var point = self.center
             point.y = newValue
@@ -99,8 +99,8 @@ extension UIView {
             return self.center.y
         }
     }
-    
-    func screenShotWithQuality(_ imageQuality: CGFloat) -> UIImage {
+    //  imageQuality:范围为(0,1]
+    public func screenShotWithQuality(_ imageQuality: CGFloat) -> UIImage {
         UIGraphicsBeginImageContext(self.bounds.size)
         let ctx = UIGraphicsGetCurrentContext()
         self.layer.render(in: ctx!)
