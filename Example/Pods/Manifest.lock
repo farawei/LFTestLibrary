@@ -1,0 +1,16 @@
+PODS:
+  - LFTestLibrary (0.1.0)
+
+DEPENDENCIES:
+  - LFTestLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  LFTestLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LFTestLibrary: 1161c2dac3ef7ac195d5c43128f35240e35a749a
+
+PODFILE CHECKSUM: a45eb3fa2f82148ffd01eac298b75f3a38787e7f
+
+COCOAPODS: 1.5.3

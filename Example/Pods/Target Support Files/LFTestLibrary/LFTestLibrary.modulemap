@@ -1,0 +1,6 @@
+framework module LFTestLibrary {
+  umbrella header "LFTestLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

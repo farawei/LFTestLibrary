@@ -1,0 +1,22 @@
+{
+  "name": "LFTestLibrary",
+  "version": "0.1.0",
+  "summary": "A short description of LFTestLibrary.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/farawei/LFTestLibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "farawei": "faweiluo@163.com"
+  },
+  "source": {
+    "git": "https://github.com/farawei/LFTestLibrary.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LFTestLibrary/Classes/**/*"
+}
