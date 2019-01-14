@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         super.viewDidAppear(animated)
         print("====== 我是分割线 ======")
         print("\(self.podsLabel.x);\(self.podsLabel.y);\(self.podsLabel.width);\(self.podsLabel.height);\(self.podsLabel.centerX);\(self.podsLabel.centerY)")
-        print(self.view.screenShotWithQuality(0.3))
     }
 
     override func didReceiveMemoryWarning() {

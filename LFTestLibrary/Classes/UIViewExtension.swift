@@ -98,16 +98,4 @@ public extension UIView {
             return self.center.y
         }
     }
-    //  imageQuality:范围为(0,1]
-    public func screenShotWithQuality(_ imageQuality: CGFloat) -> UIImage {
-        UIGraphicsBeginImageContext(self.bounds.size)
-        let ctx = UIGraphicsGetCurrentContext()
-        self.layer.render(in: ctx!)
-        var image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        let data = image?.jpegData(compressionQuality: imageQuality > 0 ? imageQuality : 0.75)
-        image = UIImage(data: data!)
-        return image!
-    }
 }
