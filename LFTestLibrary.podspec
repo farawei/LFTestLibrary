@@ -18,7 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  view的拓展，方便调用x,y,width,height,top,bottom,left,rightl;
+  调用方式是通过点调用，如：
+  let label = Label()
+  label.x
+  label.y
                        DESC
 
   s.homepage         = 'https://github.com/farawei/LFTestLibrary'
@@ -29,7 +33,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
+  s.swift_version = '4.0'
   s.source_files = 'LFTestLibrary/Classes/**/*'
   
   # s.resource_bundles = {
